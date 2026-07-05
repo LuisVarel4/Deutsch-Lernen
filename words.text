@@ -1,169 +1,613 @@
+#Verbs
 V. sein — to be
 V. haben — to have
 V. werden — to become
 V. können — can, to be able to
 V. müssen — must, to have to
-V. sagen — to say
-V. machen — to do, to make
-V. geben — to give
-V. kommen — to come
-V. sollen — should
 V. wollen — to want
-V. gehen — to go
-V. wissen — to know (a fact)
-V. sehen — to see
-V. lassen — to let, to leave
-V. stehen — to stand
-V. finden — to find
-V. bleiben — to stay, to remain
-V. liegen — to lie (be located)
-V. heißen — to be called
-
-V. denken — to think
-V. nehmen — to take
-V. tun — to do
+V. sollen — should
 V. dürfen — may, to be allowed to
-V. glauben — to believe
-V. halten — to hold
-V. nennen — to name
 V. mögen — to like
-V. zeigen — to show
-V. führen — to lead
-
+V. machen — to do, to make
+V. gehen — to go
+V. kommen — to come
+V. sagen — to say
 V. sprechen — to speak
-V. bringen — to bring
-V. leben — to live
-V. fahren — to drive, to travel
-V. meinen — to mean, to think
 V. fragen — to ask
-V. kennen — to know (a person/place)
-V. gelten — to be valid
-V. stellen — to place
-V. spielen — to play
-
-V. arbeiten — to work
-V. brauchen — to need
-V. folgen — to follow
-V. lernen — to learn
-V. bestehen — to exist, to pass
-V. verstehen — to understand
-V. setzen — to set, to put
-V. bekommen — to get, to receive
-V. beginnen — to begin
-V. erzählen — to tell
-
-V. versuchen — to try
-V. schreiben — to write
-V. laufen — to run, to walk
-V. erklären — to explain
-V. entsprechen — to correspond
-V. sitzen — to sit
-V. ziehen — to pull
-V. scheinen — to seem
-V. fallen — to fall
-V. gehören — to belong
-
-V. entstehen — to arise
-V. treffen — to meet
-V. suchen — to search
-V. legen — to lay, to put
-V. vorstellen — to introduce, imagine
-V. handeln — to act
-V. erreichen — to reach
-V. tragen — to carry, to wear
-V. schaffen — to create, to accomplish
-V. lesen — to read
-
-V. verlieren — to lose
-V. darstellen — to represent
-V. erkennen — to recognize
-V. entwickeln — to develop
-V. reden — to talk
-V. erscheinen — to appear
-V. bilden — to form
-V. anfangen — to start
-V. erwarten — to expect
-V. wohnen — to live, reside
-
-V. betreffen — to concern
-V. warten — to wait
-V. verbringen — to spend (time)
-V. geschehen — to happen
-V. helfen — to help
-V. gewinnen — to win
-V. schließen — to close
-V. fühlen — to feel
-V. bieten — to offer
-V. erinnern — to remember
-
-V. ergeben — to result in
-V. ankommen — to arrive
-V. ziehen — to move
-V. entscheiden — to decide
-V. erhalten — to receive
-V. denken — to think
-V. nutzen — to use
-V. öffnen — to open
-V. erklären — to explain
-V. wachsen — to grow
-
-V. vergessen — to forget
-V. wünschen — to wish
-V. lieben — to love
+V. antworten — to answer
 V. hören — to hear
-V. bezahlen — to pay
+V. sehen — to see
+V. lesen — to read
+V. schreiben — to write
+V. lernen — to learn
+V. verstehen — to understand
+V. wissen — to know (a fact)
+V. kennen — to know (a person or place)
+V. denken — to think
+V. finden — to find
+V. suchen — to search
+V. nehmen — to take
+V. geben — to give
+V. bekommen — to get, to receive
 V. kaufen — to buy
 V. verkaufen — to sell
+V. bezahlen — to pay
 V. essen — to eat
 V. trinken — to drink
+V. kochen — to cook
 V. schlafen — to sleep
-
+V. aufstehen — to get up
+V. arbeiten — to work
+V. wohnen — to live, to reside
+V. leben — to live
+V. spielen — to play
+V. fahren — to drive, to travel
+V. fliegen — to fly
+V. laufen — to run, to walk
+V. bleiben — to stay, to remain
+V. verlassen — to leave
+V. öffnen — to open
+V. schließen — to close
+V. helfen — to help
+V. warten — to wait
+V. brauchen — to need
+V. benutzen — to use
+V. anfangen — to start
+V. beginnen — to begin
+V. lieben — to love
 V. lachen — to laugh
 V. weinen — to cry
-V. gewinnen — to win
-V. verlieren — to lose
-V. senden — to send
-V. empfangen — to receive
-V. besuchen — to visit
 V. reisen — to travel
-V. bleiben — to stay
-V. verlassen — to leave
-
-V. benutzen — to use
-V. antworten — to answer
-V. fragen — to ask
-V. erzählen — to tell
-V. diskutieren — to discuss
-V. erklären — to explain
-V. beschreiben — to describe
-V. vergleichen — to compare
-V. wählen — to choose
-V. ändern — to change
-
-V. verbessern — to improve
+V. besuchen — to visit
+V. treffen — to meet
+V. anrufen — to call (on the phone)
+V. schicken — to send
+V. tragen — to carry, to wear
+V. sitzen — to sit
+V. stehen — to stand
+V. liegen — to lie (be located)
+V. legen — to lay, to put
+V. stellen — to place, to put
+V. bringen — to bring
+V. fühlen — to feel
+V. hoffen — to hope
+V. wünschen — to wish
 V. vergessen — to forget
 V. erinnern — to remember
-V. planen — to plan
-V. organisieren — to organize
-V. vorbereiten — to prepare
-V. entscheiden — to decide
+V. zeigen — to show
+V. erklären — to explain
 V. versuchen — to try
-V. vermeiden — to avoid
-V. erlauben — to allow
+V. gewinnen — to win
+V. verlieren — to lose
+V. heißen — to be called
+V. studieren — to study
+V. üben — to practice
+V. planen — to plan
+V. ändern — to change
 
-V. brauchen — to need
-V. wünschen — to wish
-V. hoffen — to hope
+#B1
+V. tun — to do
+V. meinen — to mean, to think
+V. glauben — to believe
+V. halten — to hold, to stop
+V. nennen — to name, to call
+V. führen — to lead, to guide
+V. gelten — to be valid, to apply
+V. folgen — to follow
+V. bestehen — to exist, to pass (an exam)
+V. setzen — to set, to put
+V. erzählen — to tell, to narrate
+V. entsprechen — to correspond, to match
+V. scheinen — to seem, to shine
+V. fallen — to fall
+V. gehören — to belong
+V. entstehen — to arise, to emerge
+V. vorstellen — to introduce, to imagine
+V. handeln — to act, to deal
+V. erreichen — to reach, to achieve
+V. schaffen — to create, to manage, to accomplish
+V. darstellen — to represent, to portray
+V. erkennen — to recognize
+V. entwickeln — to develop
+V. reden — to talk, to speak
+V. erscheinen — to appear
+V. bilden — to form, to educate
+V. erwarten — to expect
+V. betreffen — to concern, to affect
+V. verbringen — to spend (time)
+V. geschehen — to happen
+V. bieten — to offer
+V. ergeben — to result in
+V. entscheiden — to decide
+V. erhalten — to receive
+V. nutzen — to use, to utilize
+V. wachsen — to grow
+V. beschreiben — to describe
+V. vergleichen — to compare
+V. wählen — to choose, to elect
+V. verbessern — to improve
+V. vermeiden — to avoid
+V. erlauben — to allow, to permit
 V. fürchten — to fear
 V. genießen — to enjoy
 V. interessieren — to interest
-V. studieren — to study
-V. üben — to practice
 V. lehren — to teach
-V. lernen — to learn
-
 V. rechnen — to calculate
+V. diskutieren — to discuss
+V. organisieren — to organize
+V. vorbereiten — to prepare
+V. einladen — to invite
+V. feiern — to celebrate
+V. putzen — to clean
+V. waschen — to wash
+V. reparieren — to repair
+V. bestellen — to order
+V. reservieren — to reserve, to book
+V. buchen — to book
+V. mieten — to rent
+V. sparen — to save (money)
+V. leihen — to lend, to borrow
+V. kündigen — to quit, to cancel
+V. bewerben — to apply (for a job)
+V. empfehlen — to recommend
+V. vereinbaren — to arrange, to agree on
+V. abschließen — to complete, to lock
+V. melden — to report, to register
+V. anmelden — to register, to sign up
+V. beantragen — to apply for
+V. ausfüllen — to fill out
+V. unterschreiben — to sign
+V. drucken — to print
+V. kopieren — to copy
+V. speichern — to save (data)
+V. löschen — to delete
+V. prüfen — to check, to examine
+V. kontrollieren — to control, to check
+V. renovieren — to renovate
+V. umziehen — to move (residence)
+V. packen — to pack
+V. einkaufen — to shop
+V. backen — to bake
+V. riechen — to smell
+V. schmecken — to taste
+V. atmen — to breathe
+V. husten — to cough
+V. behandeln — to treat
+V. untersuchen — to examine, to investigate
+V. verschreiben — to prescribe
+V. verbieten — to forbid
+V. warnen — to warn
+V. informieren — to inform
+V. berichten — to report
+V. mitteilen — to inform, to communicate
+V. behaupten — to claim, to assert
+V. argumentieren — to argue (reason)
+V. zustimmen — to agree
+V. widersprechen — to contradict
+V. protestieren — to protest
+V. beeinflussen — to influence
+V. verändern — to change, to alter
+V. verursachen — to cause
+V. lösen — to solve
+V. verhindern — to prevent
+V. schützen — to protect
+V. retten — to rescue, to save
+V. zerstören — to destroy
+V. bauen — to build
+V. entdecken — to discover
+V. erforschen — to research
+V. messen — to measure
+V. zählen — to count
+V. teilen — to share, to divide
+V. sammeln — to collect
+V. werfen — to throw
+V. fangen — to catch
+V. schwimmen — to swim
+V. tanzen — to dance
+V. singen — to sing
+V. malen — to paint
+V. zeichnen — to draw
+V. fotografieren — to photograph
+V. senden — to send, to broadcast
+V. empfangen — to receive
+V. übersetzen — to translate
+V. kommentieren — to comment
+V. kritisieren — to criticize
+V. loben — to praise
+V. sich beschweren — to complain
+V. entschuldigen — to apologize
+V. vergeben — to forgive
+V. vertrauen — to trust
+V. streiten — to argue, to quarrel
+V. schenken — to give (as a gift)
+V. fehlen — to be missing, to lack
+V. passen — to fit, to suit
+V. passieren — to happen
+V. erleben — to experience
+V. erfahren — to experience, to learn
+V. teilnehmen — to participate
+V. mitmachen — to take part
+V. verbrauchen — to consume
+V. produzieren — to produce
+V. herstellen — to manufacture, to produce
+V. recyceln — to recycle
+V. verschmutzen — to pollute
+V. reinigen — to clean
+V. pflegen — to care for, to maintain
+V. pflanzen — to plant
+V. ernten — to harvest
+V. lassen — to let, to leave
 
+#Adjectives
+A. gut — good
+A. schlecht — bad
+A. groß — big, tall
+A. klein — small, short
+A. lang — long
+A. kurz — short
+A. neu — new
+A. alt — old
+A. jung — young
+A. schön — beautiful, nice
+A. hässlich — ugly
+A. schnell — fast, quick
+A. langsam — slow
+A. warm — warm
+A. kalt — cold
+A. heiß — hot
+A. kühl — cool
+A. richtig — correct, right
+A. falsch — wrong, false
+A. wichtig — important
+A. einfach — simple, easy
+A. schwer — difficult, heavy
+A. leicht — light, easy
+A. teuer — expensive
+A. billig — cheap
+A. günstig — affordable, favorable
+A. frei — free
+A. beschäftigt — busy
+A. müde — tired
+A. krank — sick, ill
+A. gesund — healthy
+A. glücklich — happy
+A. traurig — sad
+A. hungrig — hungry
+A. durstig — thirsty
+A. dunkel — dark
+A. hell — bright, light
+A. offen — open
+A. geschlossen — closed
+A. voll — full
+A. leer — empty
+A. hoch — high
+A. niedrig — low
+A. stark — strong
+A. schwach — weak
+A. sauber — clean
+A. schmutzig — dirty
+A. ruhig — quiet, calm
+A. laut — loud
+
+#B1
+A. möglich — possible
+A. unmöglich — impossible
+A. notwendig — necessary
+A. unnötig — unnecessary
+A. verfügbar — available
+A. verantwortlich — responsible
+A. zuverlässig — reliable
+A. unzuverlässig — unreliable
+A. pünktlich — punctual, on time
+A. unpünktlich — unpunctual, late
+A. flexibel — flexible
+A. streng — strict
+A. locker — relaxed, loose
+A. ernst — serious
+A. lustig — funny
+A. langweilig — boring
+A. interessant — interesting
+A. uninteressant — uninteresting
+A. gefährlich — dangerous
+A. sicher — safe, certain
+A. berühmt — famous
+A. unbekannt — unknown
+A. traditionell — traditional
+A. modern — modern
+A. international — international
+A. national — national
+A. öffentlich — public
+A. privat — private
+A. persönlich — personal
+A. allgemein — general, common
+A. besonders — special, especially
+A. normal — normal
+A. ungewöhnlich — unusual
+A. typisch — typical
+A. seltsam — strange
+A. peinlich — embarrassing
+A. nervös — nervous
+A. gestresst — stressed
+A. entspannt — relaxed
+A. zufrieden — satisfied, content
+A. unzufrieden — dissatisfied
+A. enttäuscht — disappointed
+A. überrascht — surprised
+A. verärgert — annoyed, angry
+A. ehrlich — honest
+A. unehrlich — dishonest
+A. freundlich — friendly
+A. unfreundlich — unfriendly
+A. höflich — polite
+A. unhöflich — impolite
+A. geduldig — patient
+A. ungeduldig — impatient
+A. vorsichtig — careful, cautious
+A. praktisch — practical
+A. aktiv — active
+A. passiv — passive
+A. positiv — positive
+A. negativ — negative
+A. optimistisch — optimistic
+A. pessimistisch — pessimistic
+A. realistisch — realistic
+A. perfekt — perfect
+A. genau — exact, precise
+A. ungefähr — approximate, about
+A. direkt — direct
+A. offiziell — official
+A. legal — legal
+A. illegal — illegal
+A. erlaubt — permitted
+A. verboten — forbidden
+A. regelmäßig — regular
+A. unregelmäßig — irregular
+A. häufig — frequent
+A. plötzlich — sudden
+A. sofort — immediate
+A. vorübergehend — temporary
+A. dauerhaft — permanent, lasting
+A. detailliert — detailed
+A. vollständig — complete
+A. unvollständig — incomplete
+A. garantiert — guaranteed
+A. unsicher — uncertain, unsafe
+A. stabil — stable
+A. fest — firm, fixed
+A. kompliziert — complicated
+A. nützlich — useful
+A. nutzlos — useless
+A. unwichtig — unimportant
+A. erfolgreich — successful
+A. erfolglos — unsuccessful
+A. arm — poor
+A. reich — rich
+A. ähnlich — similar
+A. verschieden — different, various
+A. gleich — same, equal
+A. fremd — foreign, strange
+A. bekannt — known, familiar
+A. populär — popular
+A. beruflich — professional
+A. schulisch — school-related
+A. akademisch — academic
+
+#Conjunctions
+C. und — and
+C. oder — or
+C. aber — but
+C. denn — because, for
+C. weil — because
+C. dass — that
+C. wenn — if, when
+C. als — when, as
+C. ob — whether, if
+C. während — while, during
+C. bevor — before
+C. bis — until
+C. seit — since
+C. sondern — but rather
+
+#B1
+C. obwohl — although, even though
+C. damit — so that
+C. indem — by (doing something)
+C. falls — in case, if
+C. sodass — so that
+C. nachdem — after
+C. sobald — as soon as
+C. solange — as long as
+C. außerdem — besides, moreover
+C. jedoch — however
+C. deshalb — therefore
+C. trotzdem — nevertheless, still
+C. nämlich — namely, you see
+C. entweder — either
+C. weder — neither
+
+#Numbers
+Num. null — zero
+Num. eins — one
+Num. zwei — two
+Num. drei — three
+Num. vier — four
+Num. fünf — five
+Num. sechs — six
+Num. sieben — seven
+Num. acht — eight
+Num. neun — nine
+Num. zehn — ten
+Num. elf — eleven
+Num. zwölf — twelve
+Num. dreizehn — thirteen
+Num. vierzehn — fourteen
+Num. fünfzehn — fifteen
+Num. sechzehn — sixteen
+Num. siebzehn — seventeen
+Num. achtzehn — eighteen
+Num. neunzehn — nineteen
+Num. zwanzig — twenty
+Num. dreißig — thirty
+Num. vierzig — forty
+Num. fünfzig — fifty
+Num. sechzig — sixty
+Num. siebzig — seventy
+Num. achtzig — eighty
+Num. neunzig — ninety
+Num. hundert — hundred
+Num. tausend — thousand
+Num. erste — first
+Num. zweite — second
+Num. dritte — third
+
+#B1
+Num. vierte — fourth
+Num. fünfte — fifth
+Num. sechste — sixth
+Num. siebte — seventh
+Num. achte — eighth
+Num. neunte — ninth
+Num. zehnte — tenth
+Num. elfte — eleventh
+Num. zwölfte — twelfth
+Num. million — million
+Num. milliarde — billion
+Num. hälfte — half
+Num. doppelte — double
+Num. einzelne — single, individual
+
+#Adverbs
+Adv. sehr — very
+Adv. auch — also, too
+Adv. noch — still, yet, more
+Adv. schon — already
+Adv. nur — only, just
+Adv. nicht — not
+Adv. hier — here
+Adv. dort — there
+Adv. da — there, here
+Adv. jetzt — now
+Adv. heute — today
+Adv. gestern — yesterday
+Adv. morgen — tomorrow
+Adv. immer — always
+Adv. oft — often
+Adv. manchmal — sometimes
+Adv. selten — rarely
+Adv. nie — never
+Adv. vielleicht — perhaps, maybe
+Adv. gern — gladly, like to
+Adv. gerne — gladly, like to
+Adv. zusammen — together
+Adv. allein — alone
+Adv. bald — soon
+Adv. später — later
+Adv. früher — earlier, formerly
+Adv. oben — above, upstairs
+Adv. unten — below, downstairs
+Adv. links — left
+Adv. rechts — right
+Adv. vor — before, in front
+Adv. zurück — back
+Adv. gleich — right away, same
+Adv. viel — a lot, much
+Adv. wenig — little, few
+Adv. mehr — more
+Adv. weniger — less
+
+#B1
+Adv. deshalb — therefore, for that reason
+Adv. deswegen — therefore, because of that
+Adv. trotzdem — nevertheless, still
+Adv. dennoch — nevertheless, nonetheless
+Adv. außerdem — besides, in addition
+Adv. jedoch — however
+Adv. nämlich — namely, you see
+Adv. eigentlich — actually, really
+Adv. besonders — especially
+Adv. hauptsächlich — mainly, primarily
+Adv. ungefähr — approximately, about
+Adv. etwa — about, roughly
+Adv. fast — almost, nearly
+Adv. ganz — quite, whole, completely
+Adv. total — totally, completely
+Adv. komplett — completely
+Adv. teilweise — partly
+Adv. grundsätzlich — in principle, fundamentally
+Adv. normalerweise — normally, usually
+Adv. üblicherweise — usually, customarily
+Adv. gewöhnlich — usually, ordinarily
+Adv. meistens — mostly, most of the time
+Adv. mindestens — at least
+Adv. höchstens — at most
+Adv. zumindest — at least
+Adv. sowieso — anyway
+Adv. plötzlich — suddenly
+Adv. sofort — immediately
+Adv. unbedingt — definitely, absolutely
+Adv. bestimmt — certainly, definitely
+Adv. sicherlich — certainly, surely
+Adv. wahrscheinlich — probably
+Adv. hoffentlich — hopefully
+Adv. leider — unfortunately
+Adv. glücklicherweise — fortunately
+Adv. zum Glück — luckily
+Adv. zum Beispiel — for example
+Adv. überall — everywhere
+Adv. nirgendwo — nowhere
+Adv. irgendwo — somewhere
+Adv. irgendwann — sometime, someday
+Adv. irgendwie — somehow
+Adv. hierher — here (direction)
+Adv. dorthin — there (direction)
+Adv. hin — there (away)
+Adv. her — here (toward)
+Adv. weiter — further, on
+Adv. endlich — finally
+Adv. schließlich — finally, eventually
+Adv. inzwischen — meanwhile
+Adv. mittlerweile — in the meantime
+Adv. kürzlich — recently
+Adv. neulich — recently, the other day
+Adv. demnächst — soon, in the near future
+Adv. künftig — in the future
+Adv. bisher — so far, until now
+Adv. bereits — already
+Adv. nochmal — again, once more
+Adv. wieder — again
+
+#Interjections
+Int. ja — yes
+Int. nein — no
+Int. hallo — hello
+Int. tschüss — bye, goodbye
+Int. bitte — please, you're welcome
+Int. danke — thank you, thanks
+Int. entschuldigung — excuse me, sorry
+Int. ach — oh, ah
+Int. oh — oh
+Int. super — great, super
+Int. prima — great, fine
+Int. gut — good, okay
+Int. vorsicht — careful, watch out
+Int. prost — cheers
+
+#B1
+Int. leider — unfortunately
+Int. hoppla — oops
+Int. mensch — man, wow
+Int. na ja — well, yeah
+Int. stimmt — that's right, true
+Int. genau — exactly
+Int. wirklich — really
+Int. sicher — sure, certainly
+Int. natürlich — of course
+Int. kein Problem — no problem
+Int. alles klar — all right, got it
+Int. viel Glück — good luck
+Int. herzlichen Glückwunsch — congratulations
+
+#Nouns
 N. der Mann — man
 N. die Frau — woman
 N. das Kind — child
@@ -172,7 +616,257 @@ N. die Zeit — time
 N. der Tag — day
 N. das Jahr — year
 N. die Stadt — city
+N. der Name — name
+N. die Adresse — address
+N. die Nummer — number
+N. das Telefon — telephone, phone
+N. die Familie — family
+N. der Vater — father
+N. die Mutter — mother
+N. der Bruder — brother
+N. die Schwester — sister
+N. das Essen — food, meal
+N. das Wasser — water
+N. die Milch — milk
+N. der Kaffee — coffee
+N. das Brot — bread
+N. der Apfel — apple
+N. die Schule — school
+N. die Arbeit — work, job
+N. der Beruf — profession, occupation
+N. das Geld — money
+N. der Preis — price
+N. der Freund — friend (male)
+N. die Freundin — friend (female), girlfriend
+N. die Reise — trip, journey
+N. der Zug — train
+N. der Bus — bus
+N. das Auto — car
+N. die Straße — street
+N. das Zimmer — room
+N. die Tür — door
+N. das Fenster — window
+N. der Tisch — table
+N. der Stuhl — chair
+N. das Bett — bed
+N. die Hand — hand
+N. der Kopf — head
+N. das Auge — eye
+N. die Frage — question
+N. die Antwort — answer
+N. der Montag — Monday
+N. der Dienstag — Tuesday
+N. der Mittwoch — Wednesday
+N. der Donnerstag — Thursday
+N. der Freitag — Friday
+N. der Samstag — Saturday
+N. der Sonntag — Sunday
+N. der Januar — January
+N. der Februar — February
+N. der März — March
+N. der April — April
+N. der Mai — May
+N. der Juni — June
+N. der Juli — July
+N. der August — August
+N. der September — September
+N. der Oktober — October
+N. der November — November
+N. der Dezember — December
 
+#B1
+N. die Universität — university
+N. der Student — student (male)
+N. die Studentin — student (female)
+N. das Stipendium — scholarship
+N. die Bewerbung — application
+N. der Lebenslauf — CV, résumé
+N. das Zeugnis — certificate, report card
+N. die Prüfung — exam, test
+N. die Erfahrung — experience
+N. die Meinung — opinion
+N. die Gesellschaft — society
+N. die Regierung — government
+N. die Demokratie — democracy
+N. die Wahl — election, choice
+N. das Gesetz — law
+N. die Polizei — police
+N. der Unfall — accident
+N. die Versicherung — insurance
+N. die Krankenversicherung — health insurance
+N. das Krankenhaus — hospital
+N. der Arzt — doctor (male)
+N. die Ärztin — doctor (female)
+N. die Apotheke — pharmacy
+N. das Medikament — medication, medicine
+N. die Gesundheit — health
+N. die Ernährung — nutrition, diet
+N. die Umwelt — environment
+N. der Müll — garbage, trash
+N. die Natur — nature
+N. der Wald — forest
+N. der Fluss — river
+N. das Meer — sea
+N. der Berg — mountain
+N. das Klima — climate
+N. die Temperatur — temperature
+N. der Verkehr — traffic
+N. der Stau — traffic jam
+N. die Ampel — traffic light
+N. der Führerschein — driver's license
+N. die Pünktlichkeit — punctuality
+N. die Verspätung — delay
+N. die Information — information
+N. die Nachricht — message, news
+N. die Zeitung — newspaper
+N. die Zeitschrift — magazine
+N. das Internet — internet
+N. die Website — website
+N. die E-Mail — email
+N. das Handy — mobile phone
+N. der Computer — computer
+N. das Programm — program
+N. die Software — software
+N. die Datei — file
+N. das Passwort — password
+N. die Sicherheit — security, safety
+N. die Gefahr — danger
+N. das Risiko — risk
+N. die Chance — chance, opportunity
+N. die Möglichkeit — possibility, opportunity
+N. die Schwierigkeit — difficulty
+N. das Problem — problem
+N. die Lösung — solution
+N. die Ursache — cause
+N. die Folge — consequence
+N. der Grund — reason, ground
+N. das Ziel — goal, aim
+N. der Erfolg — success
+N. der Misserfolg — failure
+N. die Hoffnung — hope
+N. die Angst — fear, anxiety
+N. die Sorge — worry, concern
+N. die Freude — joy
+N. der Ärger — anger, trouble
+N. die Langeweile — boredom
+N. die Überraschung — surprise
+N. das Vertrauen — trust
+N. die Freundschaft — friendship
+N. die Beziehung — relationship
+N. die Ehe — marriage
+N. die Scheidung — divorce
+N. die Hochzeit — wedding
+N. die Geburt — birth
+N. der Tod — death
+N. die Jugend — youth
+N. das Alter — age
+N. die Entwicklung — development
+N. die Zukunft — future
+N. die Vergangenheit — past
+N. die Gegenwart — present
+N. die Tradition — tradition
+N. die Kultur — culture
+N. die Kunst — art
+N. das Museum — museum
+N. das Theater — theater
+N. das Kino — cinema
+N. der Film — film, movie
+N. das Lied — song
+N. die Musik — music
+N. das Konzert — concert
+N. die Ausstellung — exhibition
+N. die Veranstaltung — event
+N. die Feier — celebration
+N. der Feiertag — public holiday
+N. der Urlaub — vacation, holiday
+N. die Ferien — school holidays
+N. das Hotel — hotel
+N. die Unterkunft — accommodation
+N. die Reservierung — reservation
+N. der Pass — passport
+N. die Grenze — border
+N. der Ausländer — foreigner (male)
+N. die Ausländerin — foreigner (female)
+N. die Staatsangehörigkeit — nationality, citizenship
+N. die Integration — integration
+N. die Sprache — language
+N. die Übersetzung — translation
+N. der Wortschatz — vocabulary
+N. die Grammatik — grammar
+N. der Fehler — mistake, error
+N. die Übung — exercise, practice
+N. die Hausaufgabe — homework
+N. der Kurs — course
+N. das Seminar — seminar
+N. die Vorlesung — lecture
+N. der Professor — professor
+N. der Kollege — colleague (male)
+N. die Kollegin — colleague (female)
+N. der Chef — boss (male)
+N. die Chefin — boss (female)
+N. das Gehalt — salary
+N. der Vertrag — contract
+N. die Kündigung — termination, notice
+N. die Arbeitslosigkeit — unemployment
+N. die Arbeitsstelle — job position
+N. das Vorstellungsgespräch — job interview
+N. die Qualifikation — qualification
+N. die Fähigkeit — ability, skill
+N. die Verantwortung — responsibility
+N. die Pflicht — duty, obligation
+N. das Recht — right, law
+N. die Freiheit — freedom
+N. die Gerechtigkeit — justice
+N. die Diskussion — discussion
+N. der Kompromiss — compromise
+N. die Verhandlung — negotiation
+N. die Einigung — agreement
+N. die Forschung — research
+N. das Projekt — project
+N. die Aufgabe — task, assignment
+N. die Deadline — deadline
+N. der Termin — appointment, deadline
+N. der Antrag — application, request
+N. die Genehmigung — approval, permit
+N. die Behörde — authority, government office
+N. das Formular — form
+N. die Unterschrift — signature
+N. die Bescheinigung — certificate, confirmation
+N. der Nachweis — proof, evidence
+N. die Voraussetzung — prerequisite, requirement
+N. die Bedingung — condition
+N. der Vorteil — advantage
+N. der Nachteil — disadvantage
+N. die Einstellung — attitude, setting, hiring
+N. die Meinungsverschiedenheit — disagreement
+N. die Unterstützung — support
+N. die Hilfe — help
+N. die Spende — donation
+N. die Gemeinde — community, municipality
+N. die Nachbarschaft — neighborhood
+N. der Nachbar — neighbor (male)
+N. die Nachbarin — neighbor (female)
+N. die Miete — rent
+N. die Nebenkosten — additional costs, utilities
+N. die Rechnung — bill, invoice
+N. die Quittung — receipt
+N. das Konto — account
+N. die Bank — bank
+N. der Kredit — credit, loan
+N. die Schuld — debt, guilt
+N. die Steuer — tax
+N. der Rabatt — discount
+N. das Angebot — offer, special deal
+N. die Nachfrage — demand
+N. die Lieferung — delivery
+N. die Bestellung — order
+N. die Garantie — warranty, guarantee
+N. die Reparatur — repair
+N. der Kundenservice — customer service
+N. die Beschwerde — complaint
+N. die Rückerstattung — refund
+
+#Prepositions
 P. in — in
 P. an — at, on
 P. auf — on, onto
@@ -183,3 +877,36 @@ P. für — for
 P. nach — after, to
 P. bei — at, near
 P. über — over, about
+P. unter — under, below
+P. vor — in front of, before
+P. hinter — behind
+P. neben — next to, beside
+P. zwischen — between
+P. aus — out of, from
+P. durch — through
+P. gegen — against
+P. ohne — without
+P. seit — since, for (time)
+P. bis — until
+P. um — around, at (time)
+P. ab — from, starting from
+
+#B1
+P. laut — according to
+P. gemäß — in accordance with
+P. aufgrund — due to, because of
+P. mithilfe — with the help of
+P. anstatt — instead of
+P. trotz — despite
+P. innerhalb — within, inside of
+P. außerhalb — outside of
+P. entlang — along
+P. gegenüber — opposite, across from
+P. angesichts — in view of, given
+P. bezüglich — regarding, concerning
+P. hinsichtlich — with regard to
+P. einschließlich — including
+P. ausschließlich — excluding, exclusively
+P. mittels — by means of
+P. zugunsten — in favor of
+P. zuungunsten — to the disadvantage of

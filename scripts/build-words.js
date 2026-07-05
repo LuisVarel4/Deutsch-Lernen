@@ -1,10 +1,16 @@
 /**
  * Regenerate js/words.js from words.text.
- * Add nouns/prepositions at the bottom of words.text using:
+ * Line format: PREFIX german — english
+ * Category comments: #Verbs, #Adjectives, etc.
+ *
  *   V. sein — to be
+ *   A. gut — good
+ *   C. und — and
+ *   Num. eins — one
+ *   Adv. sehr — very
+ *   Int. ja — yes
  *   N. der Mann — man
  *   P. in — in
- * Or edit js/words.js directly for nouns with articles.
  */
 import fs from "fs";
 import path from "path";
@@ -13,11 +19,22 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 const text = fs.readFileSync(path.join(root, "words.text"), "utf8");
-const lines = text.split(/\r?\n/).filter((l) => l.trim());
+const lines = text.split(/\r?\n/).filter((l) => l.trim() && !l.trim().startsWith("#"));
 
 const verbs = new Map();
 const nouns = [];
-const prepositions = [];
+const buckets = {
+  adjective: [],
+  conjunction: [],
+  number: [],
+  adverb: [],
+  interjection: [],
+  preposition: [],
+};
+
+function addSimple(type, german, english) {
+  buckets[type].push({ german, english, type });
+}
 
 for (const line of lines) {
   let m = line.match(/^V\.\s+(.+?)\s+—\s+(.+)$/i);
@@ -46,24 +63,63 @@ for (const line of lines) {
     continue;
   }
 
+  m = line.match(/^A\.\s+(.+?)\s+—\s+(.+)$/i);
+  if (m) {
+    addSimple("adjective", m[1].trim(), m[2].trim());
+    continue;
+  }
+
+  m = line.match(/^C\.\s+(.+?)\s+—\s+(.+)$/i);
+  if (m) {
+    addSimple("conjunction", m[1].trim(), m[2].trim());
+    continue;
+  }
+
+  m = line.match(/^Num\.\s+(.+?)\s+—\s+(.+)$/i);
+  if (m) {
+    addSimple("number", m[1].trim(), m[2].trim());
+    continue;
+  }
+
+  m = line.match(/^Adv\.\s+(.+?)\s+—\s+(.+)$/i);
+  if (m) {
+    addSimple("adverb", m[1].trim(), m[2].trim());
+    continue;
+  }
+
+  m = line.match(/^Int\.\s+(.+?)\s+—\s+(.+)$/i);
+  if (m) {
+    addSimple("interjection", m[1].trim(), m[2].trim());
+    continue;
+  }
+
   m = line.match(/^P\.\s+(.+?)\s+—\s+(.+)$/);
   if (m) {
-    prepositions.push({
-      german: m[1].trim(),
-      english: m[2].trim(),
-      type: "preposition",
-    });
+    addSimple("preposition", m[1].trim(), m[2].trim());
   }
 }
 
-const all = [...verbs.values(), ...nouns, ...prepositions];
+const all = [
+  ...verbs.values(),
+  ...nouns,
+  ...buckets.adjective,
+  ...buckets.conjunction,
+  ...buckets.number,
+  ...buckets.adverb,
+  ...buckets.interjection,
+  ...buckets.preposition,
+];
+
 const out =
-  "/** Auto-generated from words.text — run: node scripts/build-words.js */\n" +
+  "/** Auto-generated from words.text — run: npm run build:words */\n" +
   "export const WORDS = " +
   JSON.stringify(all, null, 2) +
   ";\n";
 
 fs.writeFileSync(path.join(root, "js", "words.js"), out);
 console.log(
-  `Generated ${all.length} words (${verbs.size} verbs, ${nouns.length} nouns, ${prepositions.length} prepositions)`
+  `Generated ${all.length} words (${verbs.size} verbs, ${nouns.length} nouns, ` +
+    `${buckets.adjective.length} adjectives, ${buckets.conjunction.length} conjunctions, ` +
+    `${buckets.number.length} numbers, ${buckets.adverb.length} adverbs, ` +
+    `${buckets.interjection.length} interjections, ${buckets.preposition.length} prepositions)`
 );

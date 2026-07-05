@@ -1,4 +1,4 @@
-const CACHE = "deutsch-lerne-v3";
+const CACHE = "deutsch-lerne-v4";
 const ASSETS = [
   "./",
   "./index.html",
@@ -9,7 +9,12 @@ const ASSETS = [
   "./icons/icon.jpg",
 ];
 
-const NETWORK_FIRST = ["./js/words.js"];
+const NETWORK_FIRST = [
+  "./index.html",
+  "./css/style.css",
+  "./js/app.js",
+  "./js/words.js",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(

@@ -32,18 +32,28 @@ function buildPool() {
   updatePoolCount();
 }
 
+const TYPE_LABELS = {
+  verb: "verbs",
+  noun: "nouns",
+  adjective: "adjectives",
+  conjunction: "conjunctions",
+  number: "numbers",
+  adverb: "adverbs",
+  interjection: "interjections",
+  preposition: "prepositions",
+};
+
 function updatePoolCount() {
   const types = getSelectedTypes();
-  const counts = { verb: 0, noun: 0, preposition: 0 };
+  const counts = Object.fromEntries(
+    Object.keys(TYPE_LABELS).map((type) => [type, 0])
+  );
   for (const w of WORDS) {
     if (types.includes(w.type)) counts[w.type]++;
   }
-  const parts = [];
-  if (types.includes("verb") && counts.verb) parts.push(`${counts.verb} verbs`);
-  if (types.includes("noun") && counts.noun) parts.push(`${counts.noun} nouns`);
-  if (types.includes("preposition") && counts.preposition) {
-    parts.push(`${counts.preposition} prepositions`);
-  }
+  const parts = types
+    .filter((type) => counts[type] > 0)
+    .map((type) => `${counts[type]} ${TYPE_LABELS[type]}`);
   $("#pool-count").textContent =
     state.pool.length === 0
       ? "No words — enable a word type"
