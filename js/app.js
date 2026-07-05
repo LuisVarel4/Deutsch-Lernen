@@ -287,6 +287,38 @@ function registerServiceWorker() {
   }).catch(() => {});
 }
 
+let deferredInstallPrompt = null;
+
+function registerInstallPrompt() {
+  const installBtn = $("#install-btn");
+  if (!installBtn) return;
+
+  const isStandalone =
+    window.matchMedia("(display-mode: standalone)").matches ||
+    window.navigator.standalone === true;
+
+  if (isStandalone) return;
+
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    installBtn.classList.remove("hidden");
+  });
+
+  installBtn.addEventListener("click", async () => {
+    if (!deferredInstallPrompt) return;
+    deferredInstallPrompt.prompt();
+    await deferredInstallPrompt.userChoice;
+    deferredInstallPrompt = null;
+    installBtn.classList.add("hidden");
+  });
+
+  window.addEventListener("appinstalled", () => {
+    deferredInstallPrompt = null;
+    installBtn.classList.add("hidden");
+  });
+}
+
 $("#answer-form").addEventListener("submit", (e) => {
   e.preventDefault();
   if (state.answered) {
@@ -311,3 +343,4 @@ buildPool();
 pickWord();
 renderCard();
 registerServiceWorker();
+registerInstallPrompt();

@@ -3,6 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:words": "node scripts/build-words.js"
+    "build:words": "node scripts/build-words.js",
+    "build:icons": "node scripts/generate-icons.js",
+    "build": "npm run build:icons && npm run build:words"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
   }
 }

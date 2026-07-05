@@ -1,4 +1,4 @@
-const CACHE = "deutsch-lerne-v4";
+const CACHE = "deutsch-lerne-v5";
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,7 +6,11 @@ const ASSETS = [
   "./js/app.js",
   "./js/words.js",
   "./manifest.webmanifest",
-  "./icons/icon.jpg",
+  "./icons/icon-180.png",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png",
+  "./icons/icon-maskable-192.png",
+  "./icons/icon-maskable-512.png",
 ];
 
 const NETWORK_FIRST = [
