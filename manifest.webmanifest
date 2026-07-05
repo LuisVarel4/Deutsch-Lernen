@@ -1,0 +1,24 @@
+{
+  "name": "Deutsch Lerne",
+  "short_name": "Deutsch",
+  "description": "Practice German vocabulary — verbs, nouns, and prepositions",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#1a1a2e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon.jpg",
+      "sizes": "680x439",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon.jpg",
+      "sizes": "680x439",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    }
+  ]
+}

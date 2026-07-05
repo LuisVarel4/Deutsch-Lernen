@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="description" content="Practice German vocabulary — verbs, nouns, and prepositions" />
+    <title>Deutsch Lerne</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="icons/icon.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Deutsch Lerne</h1>
+        <p class="subtitle">German vocabulary practice</p>
+      </header>
+
+      <section class="controls" aria-label="Practice settings">
+        <fieldset class="control-group">
+          <legend>Direction</legend>
+          <label class="chip">
+            <input type="radio" name="direction" value="en-de" checked />
+            <span>English → German</span>
+          </label>
+          <label class="chip">
+            <input type="radio" name="direction" value="de-en" />
+            <span>German → English</span>
+          </label>
+          <label class="chip">
+            <input type="radio" name="direction" value="mixed" />
+            <span>Mixed</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="control-group">
+          <legend>Word type</legend>
+          <label class="chip">
+            <input type="checkbox" name="type" value="verb" checked />
+            <span>Verbs</span>
+          </label>
+          <label class="chip">
+            <input type="checkbox" name="type" value="noun" checked />
+            <span>Nouns</span>
+          </label>
+          <label class="chip">
+            <input type="checkbox" name="type" value="preposition" checked />
+            <span>Prepositions</span>
+          </label>
+        </fieldset>
+      </section>
+
+      <section class="stats" aria-live="polite">
+        <span id="pool-count">0 words</span>
+        <span class="stats-divider">·</span>
+        <span id="score">0 / 0 correct</span>
+      </section>
+
+      <main class="card" id="quiz-card">
+        <div class="card-meta">
+          <span class="badge" id="type-badge">verb</span>
+          <span class="badge badge-muted" id="direction-badge">EN → DE</span>
+        </div>
+
+        <p class="prompt-label" id="prompt-label">Translate to German</p>
+        <h2 class="prompt" id="prompt">—</h2>
+
+        <form id="answer-form" autocomplete="off">
+          <input
+            type="text"
+            id="answer-input"
+            placeholder="Type your answer…"
+            spellcheck="false"
+            autocapitalize="off"
+            autocomplete="off"
+            aria-label="Your answer"
+          />
+          <div class="actions">
+            <button type="submit" class="btn btn-primary" id="check-btn">Check</button>
+            <button type="button" class="btn btn-ghost" id="skip-btn">Skip</button>
+            <button type="button" class="btn btn-ghost" id="reveal-btn">Reveal</button>
+          </div>
+        </form>
+
+        <div class="feedback hidden" id="feedback" role="status"></div>
+      </main>
+
+      <p class="hint" id="noun-hint">
+        For nouns, include the article: <strong>der</strong>, <strong>die</strong>, or <strong>das</strong>
+      </p>
+
+      <footer class="footer">
+        <a
+          href="https://github.com/LuisVarel4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub · LuisVarel4
+        </a>
+      </footer>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
