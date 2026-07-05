@@ -7,6 +7,7 @@ const state = {
   current: null,
   currentDirection: "en-de",
   answered: false,
+  mustWriteCorrectly: false,
   correct: 0,
   total: 0,
   recentIds: [],
@@ -83,6 +84,7 @@ function pickWord() {
   state.current = word;
   state.currentDirection = pickDirection();
   state.answered = false;
+  state.mustWriteCorrectly = false;
 }
 
 function germanDisplay(word) {
@@ -142,6 +144,22 @@ function checkGermanAnswer(input, word) {
   return normalized === normalizeGerman(word.german);
 }
 
+function isAnswerCorrect(input, word, dir) {
+  return dir === "en-de"
+    ? checkGermanAnswer(input, word)
+    : checkEnglishAnswer(input, word);
+}
+
+function expectedAnswer(word, dir) {
+  return dir === "en-de" ? expectedGerman(word) : word.english;
+}
+
+function retryPlaceholder(dir) {
+  return dir === "en-de"
+    ? "Type the correct German answer…"
+    : "Type the correct English answer…";
+}
+
 function renderCard() {
   const word = state.current;
   const feedback = $("#feedback");
@@ -151,6 +169,7 @@ function renderCard() {
   $("#answer-input").disabled = false;
   $("#check-btn").disabled = false;
   $("#check-btn").textContent = "Check";
+  $("#reveal-btn").disabled = false;
 
   if (!word) {
     $("#prompt").textContent = "No words available";
@@ -159,6 +178,7 @@ function renderCard() {
     $("#direction-badge").textContent = "—";
     $("#answer-input").disabled = true;
     $("#check-btn").disabled = true;
+    $("#reveal-btn").disabled = true;
     return;
   }
 
@@ -194,6 +214,22 @@ function showFeedback(type, html) {
   feedback.classList.remove("hidden");
 }
 
+function requireCorrectRewrite(feedbackType, messageHtml) {
+  const dir = state.currentDirection;
+  state.answered = true;
+  state.mustWriteCorrectly = true;
+  showFeedback(
+    feedbackType,
+    `${messageHtml}<br><span class="retry-hint">Type the correct answer below to continue.</span>`
+  );
+  $("#answer-input").value = "";
+  $("#answer-input").disabled = false;
+  $("#answer-input").placeholder = retryPlaceholder(dir);
+  $("#check-btn").textContent = "Check";
+  $("#reveal-btn").disabled = true;
+  $("#answer-input").focus();
+}
+
 function checkAnswer() {
   if (!state.current || state.answered) return;
 
@@ -202,13 +238,7 @@ function checkAnswer() {
 
   const word = state.current;
   const dir = state.currentDirection;
-  let isCorrect;
-
-  if (dir === "en-de") {
-    isCorrect = checkGermanAnswer(input, word);
-  } else {
-    isCorrect = checkEnglishAnswer(input, word);
-  }
+  const isCorrect = isAnswerCorrect(input, word, dir);
 
   state.answered = true;
   state.total++;
@@ -217,38 +247,59 @@ function checkAnswer() {
 
   if (isCorrect) {
     showFeedback("correct", "Correct!");
+    $("#check-btn").textContent = "Next";
+    $("#answer-input").disabled = true;
+    $("#reveal-btn").disabled = true;
   } else {
-    const answer =
-      dir === "en-de" ? expectedGerman(word) : word.english;
-    showFeedback(
+    const answer = expectedAnswer(word, dir);
+    requireCorrectRewrite(
       "incorrect",
       `Not quite. Correct answer: <strong>${escapeHtml(answer)}</strong>`
     );
   }
-
-  $("#check-btn").textContent = "Next";
-  $("#answer-input").disabled = true;
 }
 
-function revealAnswer() {
-  if (!state.current) return;
+function checkRetryAnswer() {
+  if (!state.current || !state.mustWriteCorrectly) return;
+
+  const input = $("#answer-input").value;
+  if (!input.trim()) return;
 
   const word = state.current;
   const dir = state.currentDirection;
-  const answer = dir === "en-de" ? expectedGerman(word) : word.english;
+  const isCorrect = isAnswerCorrect(input, word, dir);
+
+  if (isCorrect) {
+    state.mustWriteCorrectly = false;
+    showFeedback("correct", "Correct! You can move on.");
+    $("#check-btn").textContent = "Next";
+    $("#answer-input").disabled = true;
+  } else {
+    const answer = expectedAnswer(word, dir);
+    showFeedback(
+      "incorrect",
+      `Keep trying. Correct answer: <strong>${escapeHtml(answer)}</strong><br><span class="retry-hint">Type the correct answer below to continue.</span>`
+    );
+    $("#answer-input").focus();
+  }
+}
+
+function revealAnswer() {
+  if (!state.current || (state.answered && !state.mustWriteCorrectly)) return;
+
+  const word = state.current;
+  const dir = state.currentDirection;
+  const answer = expectedAnswer(word, dir);
 
   if (!state.answered) {
     state.total++;
     $("#score").textContent = `${state.correct} / ${state.total} correct`;
   }
-  state.answered = true;
-  $("#check-btn").textContent = "Next";
 
-  showFeedback(
+  requireCorrectRewrite(
     "revealed",
     `Answer: <strong>${escapeHtml(answer)}</strong>`
   );
-  $("#answer-input").disabled = true;
 }
 
 function skipWord() {
@@ -321,7 +372,9 @@ function registerInstallPrompt() {
 
 $("#answer-form").addEventListener("submit", (e) => {
   e.preventDefault();
-  if (state.answered) {
+  if (state.mustWriteCorrectly) {
+    checkRetryAnswer();
+  } else if (state.answered) {
     nextWord();
   } else {
     checkAnswer();
