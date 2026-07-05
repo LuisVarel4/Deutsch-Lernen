@@ -5,7 +5,8 @@
   "scripts": {
     "build:words": "node scripts/build-words.js",
     "build:icons": "node scripts/generate-icons.js",
-    "build": "npm run build:icons && npm run build:words"
+    "prepare:dist": "node scripts/prepare-dist.js",
+    "build": "npm run build:icons && npm run build:words && npm run prepare:dist"
   },
   "devDependencies": {
     "sharp": "^0.35.3"
